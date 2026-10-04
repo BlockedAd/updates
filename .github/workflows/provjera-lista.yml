@@ -1,0 +1,30 @@
+# Daily check that every blocklist the app downloads still exists and is not empty or cut in half.
+# Lives in BlockedAd/updates at .github/workflows/provjera-lista.yml. A failed run sends an email to the repo owner.
+name: Provjera lista
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+jobs:
+  provjera:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Provjeri sve liste
+        run: |
+          fail=0
+          check() { # name, minimum lines, url
+            n=$(curl -sSfL --max-time 120 "$3" | grep -cvE '^\s*(#|!|$)' || true)
+            if [ "${n:-0}" -lt "$2" ]; then echo "GRESKA: $1 ima $n redova (minimum $2) - $3"; fail=1; else echo "ok: $1 $n"; fi
+          }
+          check adaway 1000 https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt
+          check 1hosts-lite 1000 https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/domains.txt
+          check easyprivacy 1000 https://easylist.to/easylist/easyprivacy.txt
+          check blp-phishing 1000 https://blocklistproject.github.io/Lists/alt-version/phishing-nl.txt
+          check blp-scam 1000 https://blocklistproject.github.io/Lists/alt-version/scam-nl.txt
+          check blp-ransomware 1000 https://blocklistproject.github.io/Lists/alt-version/ransomware-nl.txt
+          check blp-porn 1000 https://blocklistproject.github.io/Lists/alt-version/porn-nl.txt
+          check blp-gambling 1000 https://blocklistproject.github.io/Lists/alt-version/gambling-nl.txt
+          check popups 20 https://raw.githubusercontent.com/BlockedAd/updates/main/blocklist_popups.txt
+          check balkan 50 https://raw.githubusercontent.com/BlockedAd/updates/main/blocklist_balkan.txt
+          check version-json 1 https://raw.githubusercontent.com/BlockedAd/updates/main/version.json
+          exit $fail
