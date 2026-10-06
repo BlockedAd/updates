@@ -46,7 +46,7 @@ We prefer to say this up front:
 ## Privacy
 
 - Everything happens on your phone. No account, no servers of ours, no data collected.
-- BlockedAd uses Android's **local VPN** only to see which addresses apps ask for. Your traffic never leaves the phone and your IP address doesn't change.
+- BlockedAd uses Android's **local VPN** to check which addresses apps ask for and, if you block an app, to stop its connections. All of this happens on the phone itself: your traffic is not routed through any server and your IP address doesn't change.
 - Once a day the app downloads updated blocklists and checks this page for a new version. Nothing about you is sent.
 
 ## How to install
