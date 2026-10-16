@@ -6,6 +6,10 @@ BlockedAd is an ad blocker for Android that works on the whole phone, not only i
 
 **[⬇ Download BlockedAd (free)](https://blockedad.gumroad.com/l/app?ref=github)**
 
+Already use [Obtainium](https://github.com/ImranR98/Obtainium)? Add BlockedAd there and get updates straight from this page:
+
+<a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.blockedad.app%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FBlockedAd%2Fupdates%22%2C%22author%22%3A%22BlockedAd%22%2C%22name%22%3A%22BlockedAd%22%7D"><img src="img/badge_obtainium.png" height="48" alt="Get it on Obtainium"></a>
+
 <p>
   <img src="img/01-main.png" width="240" alt="Main screen: protection is on">
   <img src="img/02-options.png" width="240" alt="Blocking options">
