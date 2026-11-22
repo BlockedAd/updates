@@ -19,16 +19,20 @@ Already use [Obtainium](https://github.com/ImranR98/Obtainium)? Add BlockedAd th
 ## What it does
 
 **Free forever**
-- Blocks ads in apps and browsers
+- Blocks ads in apps, games and browsers
 - Blocks trackers that record what you do
-- Blocks dangerous sites: fake login pages, scams, ransomware
+- Blocks dangerous sites: fake login pages, scams, ransomware, crypto miners
 - Pause for 5 minutes or 1 hour with one tap
 - Allow apps or websites that don't work properly
+- See recently blocked addresses and allow one with a tap
 - Blocklists update automatically every day
 - Weekly report: see how much BlockedAd blocked for you each week
 
 **Pro (7 days free in the app, no card number needed)**
-- Family mode with PIN: adult and gambling sites, safe search
+- Firewall: block the internet for chosen apps – always, on mobile data only, or on Wi-Fi only
+- Block new apps until you allow them
+- Blocked services: block popular social and video services with one tap
+- Family mode with PIN: blocks adult, gambling, dating and piracy sites and turns on safe search
 - Statistics per app: what each app connects to
 - Scheduled blocking of chosen apps at set hours
 - My blocklist: block extra websites or add blocklists from the internet
@@ -60,7 +64,7 @@ We prefer to say this up front:
 3. If Google Play Protect suggests a scan, tap **Scan app**, then **Install**.
 4. Open BlockedAd and tap the big button. Android asks once to allow the VPN – tap **OK**.
 
-The app updates itself: it tells you when a new version is ready.
+When a new version is ready, the app tells you and opens the download. Install it like the first time – your settings and Pro stay.
 
 ## Why is BlockedAd not on Google Play?
 
@@ -79,12 +83,12 @@ BlockedAd je blokator reklama za Android koji radi na cijelom telefonu, a ne sam
 
 Dodatne Pro funkcije su 7 dana besplatne u aplikaciji, bez broja kartice. Plaćate samo ako kasnije sami odlučite kupiti Pro.
 
-Aplikacija se prikazuje na jeziku vašeg telefona: engleski, njemački, španski, bosanski, hrvatski, srpski.
+Aplikacija se prikazuje na jeziku vašeg telefona: engleski, njemački, španski, francuski, bosanski, hrvatski, srpski.
 
 ## Good to know
 
 - Android 8.0 or newer.
-- Languages: English, German, Spanish, Bosnian, Croatian, Serbian.
+- Languages: English, German, Spanish, French, Bosnian, Croatian, Serbian.
 - Questions: blockedad@hotmail.com
 
 ---
